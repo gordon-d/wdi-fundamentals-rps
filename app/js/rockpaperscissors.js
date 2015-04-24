@@ -23,7 +23,7 @@ function randomPlay() {
 
 function getPlayerMove(move) {
     var x;
-    if move {
+    if (move) {
         x = move
     } else {
         x = getInput()
@@ -33,7 +33,7 @@ function getPlayerMove(move) {
 
 function getComputerMove(move) {
     var x;
-    if move {
+    if (move) {
         x = move
     } else {
         x = randomPlay()
@@ -97,7 +97,6 @@ function playToX(x) {
     console.log("Let's play Rock, Paper, Scissors");
     var playerWins = 0;
     var computerWins = 0;
-    var x = x
     while (playerWins < x && computerWins < x) {
         var playerMove = getPlayerMove(getInput())
         var computerMove = getComputerMove(randomPlay())
